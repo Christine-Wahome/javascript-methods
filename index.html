@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kenyan License Plate Checker</title>
+</head>
+<body>
+  <form>
+    <label for="startPlate">Start Plate:</label>
+    <input type="text" id="startPlate" name="startPlate" pattern="[A-Z]{2}-[0-9]{4}" required>
+    <label for="endPlate">End Plate:</label>
+    <input type="text" id="endPlate" name="endPlate" pattern="[A-Z]{2}-[0-9]{4}" required>
+    <button type="submit" onclick="findPlates()">Submit</button>
+  </form>
+  <p id="result"></p>
+  <script src="./index.js"></script>
+</body>
+</html>
